@@ -1,13 +1,12 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import TopNav from '../../containers/navs/Topnav';
 import Footer from '../../containers/navs/Footer';
+import './layout.css';
 
-const GameeLayout = ({ children, history }) => {
+const GameLayout = ({ children, history }) => {
     return (
-        <div id="container">
-            <TopNav history={history} />
+        <div id="container" className="content-container">
             <main>
                 <div className="container-fluid">{children}</div>
             </main>

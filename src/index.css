@@ -5,9 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dashboard-wrapper {
+  color: white;
 }
+
+
+.board {
+  display: flex;
+  flex-direction: row;
+  width: 30.5em;
+  background: rgb(0 74 103);
+  border: 2px solid white;
+  font-size: 30px;
+  font-weight: 800;
+  outline: none;
+  color: 'yellow'
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+
+
